@@ -33,6 +33,10 @@ def main():
     y_train = to_categorical(y_train, 10)
     y_val = to_categorical(y_val, 10)
 
+    # Load model instead (upload saved model to github - ? how?)
+    # loaded_full_model = load_model('drive/My Drive/Data/models/20200131-03111580440309-all-images-Adam.h5')
+    # https://medium.com/linkit-intecs/how-to-upload-large-files-to-github-repository-2b1e03723d2
+    
     # Create model
     model = Sequential([
         Flatten(input_shape=(32, 32, 3)),
