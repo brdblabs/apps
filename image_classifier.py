@@ -1,10 +1,11 @@
 # Create Steamlit app
+
+import tensorflow as tf
 import streamlit as st
 from PIL import Image
 import numpy as np
 import time
 
-import tensorflow as tf
 from tensorflow.keras.datasets import cifar10
 from tensorflow.keras.models import Sequential
 from tensorflow.keras.layers import Flatten, Dense
