@@ -1,18 +1,17 @@
 # Create Steamlit app
 
-import tensorflow as tf
-import streamlit as st
-from PIL import Image
-import numpy as np
-import time
-
-from tensorflow.keras.datasets import cifar10
-from tensorflow.keras.models import Sequential
-from tensorflow.keras.layers import Flatten, Dense
-from tensorflow.keras.utils import to_categorical
-import matplotlib.pyplot as plt
-
 def main():
+  import tensorflow as tf
+  import streamlit as st
+  from PIL import Image
+  import numpy as np
+
+  from tensorflow.keras.datasets import cifar10
+  from tensorflow.keras.models import Sequential
+  from tensorflow.keras.layers import Flatten, Dense
+  from tensorflow.keras.utils import to_categorical
+  import matplotlib.pyplot as plt
+  
   st.title('Cifar10 Web Classifier')
   st.write("Upload any image that you think fits into one of the classes and see if the prediction is correct.")
 
