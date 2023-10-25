@@ -5,8 +5,8 @@ import numpy as np
 import matplotlib.pyplot as plt
 
 def main():
-  st.title('Cifar10 Web Classifier')
-  st.write("Upload any image that you think fits into one of the classes and see if the prediction is correct.")
+  st.title('Cifar10 Image Classifier (A work in progress...')
+  st.write("Upload any image of one of the following: dog, cat, deer, airplane, ship, truck, automobile, frog, bird, horse.")
 
   file = st.file_uploader('Please upload an image', type=['jpg', 'png'])
   if file:
