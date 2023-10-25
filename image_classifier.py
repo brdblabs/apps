@@ -3,7 +3,6 @@ import streamlit as st
 from PIL import Image
 import numpy as np
 import matplotlib.pyplot as plt
-from prediction import predict
 
 def main():
   st.title('Cifar10 Web Classifier')
@@ -20,6 +19,12 @@ def main():
 
     # Progress bar while model is running
     st.write('Please standby while your image is analyzed...')
+
+    # Load saved model
+    model = tf.keras.models.load_model('cifar10_model.h5')
+
+    predictions = model.predict(img_array)
+    cifar10_classes = ['airplane', 'automobile', 'bird', 'cat', 'dog', 'deer', 'frog', 'horse', 'ship', 'truck']
 
     fig, ax = plt.subplots()
     y_pos = np.arange(len(cifar10_classes))
