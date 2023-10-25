@@ -11,6 +11,14 @@ def main():
   st.markdown("- cat")
   st.markdown("- frog")
 
+  st.markdown('''
+  <style>
+  [data-testid="stMarkdownContainer"] ul{
+    padding-left:40px;
+  }
+  </style>
+  ''', unsafe_allow_html=True)
+
   file = st.file_uploader('Please upload an image', type=['jpg', 'png'])
   if file:
     image = Image.open(file)
