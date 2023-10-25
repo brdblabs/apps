@@ -7,17 +7,11 @@ import matplotlib.pyplot as plt
 def main():
   st.title('Cifar10 Image Classifier (A work in progress...')
   st.write("Upload any image of one of the following:")
-  st.markdown("- dog")
-  st.markdown("- cat")
-  st.markdown("- frog")
-
-  st.markdown('''
-  <style>
-  [data-testid="stMarkdownContainer"] ul{
-    padding-left:40px;
-  }
-  </style>
-  ''', unsafe_allow_html=True)
+  st.write('''
+  - Dog
+  - Cat
+  - Frog
+  ''')
 
   file = st.file_uploader('Please upload an image', type=['jpg', 'png'])
   if file:
