@@ -11,6 +11,13 @@ def main():
   - Dog
   - Cat
   - Frog
+  - Deer
+  - Bird
+  - Airplane
+  - Truck
+  - Automobile
+  - Ship
+  - Horse
   ''')
 
   file = st.file_uploader('Please upload an image', type=['jpg', 'png'])
