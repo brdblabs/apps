@@ -17,10 +17,16 @@ X_val = X_val /255
 y_train = to_categorical(y_train, 10)
 y_val = to_categorical(y_val, 10)
 
+# Create the model
 model = Sequential([
-    Flatten(input_shape=(32, 32, 3)),
-    Dense(1000, activation='relu'),
-    Dense(10, activation='softmax')
+    Conv2D(10, 3, activation="relu", input_shape=(32, 32, 3)),
+    Conv2D(10, 3, activation="relu"),
+    MaxPooling2D(),
+    Conv2D(10, 3, activation="relu"),
+    Conv2D(10, 3, activation="relu"),
+    MaxPooling2D(),
+    Flatten(),
+    Dense(10, activation="softmax")
 ])
 
 model.compile(loss='categorical_crossentropy', optimizer='adam', metrics=['accuracy'])
