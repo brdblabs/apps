@@ -7,7 +7,7 @@ import matplotlib.pyplot as plt
 def main():
   st.title('Cifar10 Image Classifier')
   st.write("Upload any image of one of the following:  \n"
-  "[cat, dog, frog, horse, airplance, ship, deer, automobile, truck, bird.]")
+  "[cat, dog, frog, horse, airplance, ship, deer, automobile, truck, bird]")
 
   file = st.file_uploader('Please upload an image', type=['jpg', 'png'])
   if file:
