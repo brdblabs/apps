@@ -5,7 +5,7 @@ import numpy as np
 import matplotlib.pyplot as plt
 
 def main():
-  st.title('Cifar10 Image Classifier (A work in progress...')
+  st.title('Cifar10 Image Classifier')
   st.write("Upload any image of one of the following:  \n"
   "[cat, dog, frog, horse, airplance, ship, deer, automobile, truck, bird.]")
 
